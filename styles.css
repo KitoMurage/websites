@@ -55,34 +55,6 @@ body{
     padding: 80px 0;
 }
 
-/**.about{
-    padding: 80px 0;
-    color:aliceblue;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.about h1{
-    
-    font-size: 30px;
-    
-}
-
-.about p {
-    width: 20%;
-    font-size: 16px;
-    text-align: center;
-}
-
-.about-col-1{
-    flex-basis: 35%;
-}
-
-.about-col-2{
-
-}**/
 
 
 /*------------------about-------------------*/
