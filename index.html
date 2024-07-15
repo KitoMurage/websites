@@ -10,7 +10,7 @@
 <body>
         <div id="header">
             <div class="container">
-                <img src="FullLogo_NoBuffer.png" alt="logo" class="logo">
+                <img src="images/FullLogo_NoBuffer.png" alt="logo" class="logo">
             </div>
             <div class="slogan">
                 <h1></h1>
@@ -22,35 +22,33 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="DOC2.jpg" alt="">
+                <img src="images/DOC2.jpg" alt="">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Us</h1>
                 <p>the heart nebula healthcare medical centre is a  clinic located in upperhill nairobi on the fortis suites buliding.  it offers evidence based cardiac care solutions. the comprehensive clinic offers consultation services,  a modern level 5 laboratory as well as a well stocked pharmacy</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Contact</p>
-                        <p class="tab-links" onclick="opentab('experience')">Location</p>
-                        <p class="tab-links" onclick="opentab('education')">Other</p>
+                        <p class="tab-links active-link" onclick="opentab('contacts')">Contact</p>
+                        <p class="tab-links" onclick="opentab('location')">Location</p>
+
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="contacts">
                         <ul>
-                            <li><span>Phone</span><br>0713 863 705</li>
+                            <li><span>Office Mobile</span><br>0713 863 705</li>
+                            <li><span>Mobile</span><br>0722 959 388</li>
                             <li><span>Email</span><br> drmurageclinic@gmail.com</li>
                             
                         </ul>
                     </div>
 
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents" id="location">
                         <ul>
-                            <li><span>Location</span><br>sixth floor , fortis suites , upperhill nairobi , along hospital road</li>
+                            <li><span>Location</span><br>6th Floor Fortis Suites</li>
+                            <li><span></span>Upperhill Nairobi , along hospital road</li>
                         </ul>
                     </div>
 
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>N/A</span><br>To be added</li>
-                        </ul>
-                    </div>
+                
             </div>
         </div>
     </div>
@@ -85,7 +83,20 @@
         </div>
     </div>
 </div>
-
+<!----------contact-form----------->
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <div class="contact-form-title">
+                <h2>Contact Us</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="24794873-af8e-42e6-868a-498d476f82b2">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs required">
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs required">
+            <textarea name="Message" rows="6" placeholder="Your Message" class="contact-textarea"></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
 
 
 
