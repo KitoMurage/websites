@@ -22,29 +22,39 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="DOC2.jpg" alt="">
+                <img src="IconOnly_Transparent_NoBuffer.png" alt="logo2" class="logo2">
+            
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Us</h1>
-                <p>the heart nebula healthcare medical centre is a  clinic located in upperhill nairobi on the fortis suites buliding.  it offers evidence based cardiac care solutions. the comprehensive clinic offers consultation services,  a modern level 5 laboratory as well as a well stocked pharmacy</p>
+                <br></br>
+                <p>The Heart Nebula Healthcare is a <strong>Level 3 medical centre </strong> located in Upperhill Nairobi in the Fortis Suites buliding. It offers evidence based cardiac care solutions. The comprehensive clinic offers consultation services, a modern level 5 laboratory as well as a well stocked pharmacy</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('contacts')">Contact</p>
-                        <p class="tab-links" onclick="opentab('location')">Location</p>
+                        <p class="tab-links active-link" onclick="opentab('contacts')">Contact/Location</p>
+                        <p class="tab-links" onclick="opentab('location')">Facilities</p>
 
                     </div>
                     <div class="tab-contents active-tab" id="contacts">
                         <ul>
                             <li><span>Office Mobile</span><br>0713 863 705</li>
-                            <li><span>Mobile</span><br>0722 959 388</li>
                             <li><span>Email</span><br> drmurageclinic@gmail.com</li>
+                            <li><span>Location</span><br>Room 605 & 609</li>
+                            <li><span></span>6th Floor Fortis Suites</li>
+                            <li><span></span>Upperhill Nairobi , along hospital road</li>
+
                             
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="location">
                         <ul>
-                            <li><span>Location</span><br>6th Floor Fortis Suites</li>
-                            <li><span></span>Upperhill Nairobi , along hospital road</li>
+                            <li><span>Clinic</span><br>Level 3 medical centre</li>
+                            <li><span></span>Cardiology clinic</li>
+                            <li><span></span>Room 605</li>
+                            <li><span>Lab</span><br>Level 5 Laboratory</li>
+                            <li><span></span>Room 609</li>
+                            <li><span>Pharmacy</span><br>Well stocked pharmacy</li>
+                            <li><span></span>Room 609</li>
                         </ul>
                     </div>
 
@@ -54,6 +64,35 @@
     </div>
 </div>
 
+<!---------------meet the team---------------->
+<section class="team">
+    <div class="team-member">
+        <img src="doctorstock.jpg" alt="Member 1">
+        <h2>Martin Murage</h2>
+        <h3>Cheif Cardiologist</h3>
+        <p>to be added</p>
+    </div>
+    <div class="team-member">
+        <img src="DOC2.jpg" alt="Member 2">
+        <h2>John Smith</h2>
+        <h3>Pharmacist</h3>
+        <p>to be added</p>
+    </div>
+    <div class="team-member">
+        <img src="user.png" alt="Member 3">
+        <h2>Alex Morgan</h2>
+        <h3>Reception</h3>
+        <p>to be added</p>
+    </div>
+    <div class="team-member">
+        <img src="user.png" alt="Member 4">
+        <h2>Jane Smith</h2>
+        <h3>Lab technician</h3>
+        <p>to be added</p>
+    </div>
+
+</section>
+
 <!-------services------------->
 <div id="services">
     <div class="container">
@@ -62,28 +101,26 @@
             <div>
                 <i class="fa-solid fa-suitcase-medical"></i>
                 <h2>Consultation</h2>
-                <p> With over five years of experience in the industry, I specialize in crafting responsive, 
-                    interactive, and modern web designs that help businesses stand out in the digital world</p>
-                <a href="#">learn more</a>
+                <p> Specialist consultation in internal medicine and cardiology</p>
+                <a href="#contact_form">Book an apointment</a>
             </div>
             <div>
                 <i class="fa-solid fa-stethoscope"></i>
-                <h2>Diagnostic Testing</h2>
-                <p> With over five years of experience in the industry, I specialize in crafting responsive, 
-                    interactive, and modern web designs that help businesses stand out in the digital world</p>
-                <a href="#">learn more</a>
+                <h2>Level 5 Laboratory</h2>
+                <p> ECG, Echo, 24Hr holter monitoring, ambulatory BP monitoring, Exercise stress test, among others...</p>
+                <a href="#contact_form">Book an apointment</a>
             </div>
             <div>
                 <i class="fa-solid fa-receipt"></i>
                 <h2>Pharmacy</h2>
-                <p> With over five years of experience in the industry, I specialize in crafting responsive, 
-                    interactive, </p>
-                <a href="#">learn more</a>
+                <p>Well stocked pharmacy with competitive pricing</p>
+                <a href="#contact_form">Book an apointment</a>
             </div>
         </div>
     </div>
 </div>
 <!----------contact-form----------->
+<div id="contact_form">
     <div class="contact-container">
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
             <div class="contact-form-title">
@@ -93,11 +130,12 @@
             <input type="hidden" name="access_key" value="24794873-af8e-42e6-868a-498d476f82b2">
             <input type="text" name="name" placeholder="Your Name" class="contact-inputs required">
             <input type="email" name="email" placeholder="Your Email" class="contact-inputs required">
+            <input type="number" name="mobile" placeholder="Your Mobile Number" class="contact-inputs required">
             <textarea name="Message" rows="6" placeholder="Your Message" class="contact-textarea"></textarea>
             <button type="submit" class="btn">Submit</button>
         </form>
     </div>
-
+</div>
 
 
     <script>
