@@ -14,7 +14,7 @@ body{
 #header{
     height: 50vh;
     background-size: cover;
-    background-position: center;
+    background-position: center
 
 
 }
@@ -86,8 +86,13 @@ body{
 }
 
 .about-col-1 img{
-    width: 100%;
+    width: 80%;
     border-radius: 15px;
+}
+
+.about-col-1 h3{
+    text-align: center;
+    
 }
 
 .about-col-2{
@@ -147,7 +152,46 @@ body{
 .tab-contents.active-tab{
     display: block;
 }
+/*---------------Team---------------------*/
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
 
+.team-member {
+    background-color: #5162c1;
+    border: 1px solid #5162c1;
+    border-radius: 8px;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.team-member h2 {
+    margin: 0.5em 0 0.2em;
+}
+
+.team-member h3 {
+    margin: 0;
+    color: #ff004f;
+    font-weight: normal;
+}
+
+.team-member p {
+    margin: 0.5em 0 0;
+    color: #fff;
+}
 /*---------------services-----------------*/
 
 #services{
@@ -199,7 +243,7 @@ body{
 /*-----------------contact-form------------------*/
 
 .contact-container{
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
