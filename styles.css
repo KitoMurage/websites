@@ -204,7 +204,7 @@ body{
 /*-----------------contact-form------------------*/
 
 .contact-container {
-    height: 115vh;
+    height: 105vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -214,7 +214,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 20px;
+    gap: 10px;
     margin: auto;
     flex-basis: 60%;
 }
@@ -225,7 +225,7 @@ form input, form textarea {
     outline: none;
     background: #5162c1;
     padding: 15px;
-    margin: 15px 0;
+    margin: 10px 0;
     color: #fff;
 }
 
@@ -251,6 +251,7 @@ form ::placeholder {
     resize: none;
 }
 
+
 input[type="date"].contact-inputs::-webkit-calendar-picker-indicator {
     background-color: white;
     padding: 5px;
@@ -263,7 +264,13 @@ input[type="date"].contact-inputs::-webkit-calendar-picker-indicator:hover {
 }
 
 input[type="date"].contact-inputs {
-    font-size: 16px; 
+    font-size: 16px;
     padding: 10px;
-    color: #fff; 
+    color: #fff;
+}
+
+.date-picker-label {
+    color: #fff;
+    margin: 10px 0 5px;
+    font-size: 16px; 
 }
