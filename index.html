@@ -28,7 +28,7 @@
             <div class="about-col-2">
                 <h1 class="sub-title">About Us</h1>
                 <br></br>
-                <p>The Heart Nebula Healthcare is a <strong>Level 3 medical centre </strong> located in Upperhill Nairobi in the Fortis Suites buliding. It offers evidence based cardiac care solutions. The comprehensive clinic offers consultation services, a modern level 5 laboratory as well as a well stocked pharmacy</p>
+                <p>The Heart Nebula Healthcare is a <strong>Level 3A medical centre </strong> located in Upperhill Nairobi in the Fortis Suites buliding. It offers evidence based cardiac care solutions. The comprehensive clinic offers consultation services, a modern level 5 laboratory as well as a well stocked pharmacy</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('contacts')">Contact/Location</p>
                         <p class="tab-links" onclick="opentab('location')">Facilities</p>
@@ -72,7 +72,7 @@
             <div>
                 <i class="fa-solid fa-suitcase-medical"></i>
                 <h2>Consultation</h2>
-                <p> Specialist consultation in internal medicine and cardiology</p>
+                <p>Specialist consultation in <strong>Internal Medicine</strong> and <strong>Cardiology</strong> with our specialist, Dr. Martin M. Murage.</p>
                 <a href="#contact_form">Book an apointment</a>
             </div>
             <div>
@@ -107,12 +107,14 @@
             <input type="hidden" name="access_key" value="939d9854-66f5-4ef5-ae2c-4b63f6192ed9">
             <input type="text" name="name" placeholder="Your Name" class="contact-inputs required">
             <input type="email" name="email" placeholder="Your Email" class="contact-inputs required">
-            <input type="number" name="mobile" placeholder="Your Mobile Number" class="contact-inputs required">
+            <input type="number" name="mobile" placeholder="Your Phone Number" class="contact-inputs required">
+            <input type="date" id="datePicker" name="date(yyyy-mm-dd)" placeholder="Appointment date" class="contact-inputs required">
             <textarea name="Message" rows="6" placeholder="Your Message" class="contact-textarea"></textarea>
             <button type="submit" class="btn">Submit</button>
         </form>
     </div>
 </div>
+
 
 
     <script>
@@ -131,6 +133,12 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var datePicker = document.getElementById('datePicker');
+        var today = new Date().toISOString().split('T')[0];
+        datePicker.setAttribute('min', today);
+    });
     </script>
      
 </body>
