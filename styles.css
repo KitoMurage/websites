@@ -203,15 +203,14 @@ body{
 
 /*-----------------contact-form------------------*/
 
-.contact-container{
-    height: 100vh;
+.contact-container {
+    height: 115vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
-.contact-form{
+.contact-form {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -220,20 +219,21 @@ body{
     flex-basis: 60%;
 }
 
-form input, form textarea{
+form input, form textarea {
     width: 100%;
-    border:0;
+    border: 0;
     outline: none;
     background: #5162c1;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
-    
 }
-form ::placeholder{
+
+form ::placeholder {
     color: #fff;
 }
-.btn{
+
+.btn {
     display: inline-block;
     margin: auto;
     border: 1px solid #ff004f;
@@ -249,5 +249,21 @@ form ::placeholder{
     width: 100%;
     height: 170px;
     resize: none;
+}
 
+input[type="date"].contact-inputs::-webkit-calendar-picker-indicator {
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+input[type="date"].contact-inputs::-webkit-calendar-picker-indicator:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+input[type="date"].contact-inputs {
+    font-size: 16px; 
+    padding: 10px;
+    color: #fff; 
 }
