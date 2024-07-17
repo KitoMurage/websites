@@ -3,61 +3,63 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-
 }
 
 body{
-    background:#fff;
-    color: #080808 ;
+    background: #fff;
+    color: #080808;
 }
 
-#header{
-    height: 50vh;
+
+/*-----------header---------*/
+#header {
+    height: 40vh;
     background-size: cover;
-    background-position: center
-
-
+    background-position: center;
+    position: relative;
 }
+
 .container {
     padding: 10px 10%;
-
+    position: relative;
 }
 
 .container .logo {
     margin: auto;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
 .logo {
     width: 300px;
-
 }
 
-.slogan{
-    color: #3047c6  ;
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin: auto;
+
+.top-right-button {
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+    padding: 10px 20px; 
+    background-color: #3047c6; 
+    color: #fff; 
+    text-decoration: none; 
+    border-radius: 5px; 
 }
 
-#body{
-
+#body {
     background-position: center;
-    background: #3047c6 ;
-    color:#fff;
-}
-
-.about{
-    padding: 80px 0;
+    background: #3047c6;
+    color: #fff;
 }
 
 
 
 /*------------------about-------------------*/
+.about{
+    padding: 80px 0;
+}
+
 
 #about{
     padding: 80px 0;
@@ -204,7 +206,7 @@ body{
 /*-----------------contact-form------------------*/
 
 .contact-container {
-    height: 105vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -273,4 +275,63 @@ input[type="date"].contact-inputs {
     color: #fff;
     margin: 10px 0 5px;
     font-size: 16px; 
+}
+
+
+/*-----------responsive--------------*/
+
+@media screen and (max-width: 800px) {
+    #header {
+        height: 35vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .container {
+        padding: 40px 10%;
+        position: relative;
+    }
+
+    .container .logo {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 200px; 
+    }
+
+    .top-right-button {
+        top: 10px;
+        right: 10px; 
+        padding: 8px 16px; 
+    }
+
+    #body {
+        background-position: center;
+        background: #3047c6;
+        color: #fff;
+    }
+    .contact-container {
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .main_text {
+        left: 50%; 
+        transform: translate(-50%, 20%); 
+        font-size: 0.7rem; 
+    }
+    .button {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
 }
