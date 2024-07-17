@@ -323,15 +323,3 @@ input[type="date"].contact-inputs {
     }
     
 }
-
-@media screen and (max-width: 480px) {
-    .main_text {
-        left: 50%; 
-        transform: translate(-50%, 20%); 
-        font-size: 0.7rem; 
-    }
-    .button {
-        padding: 6px 12px;
-        font-size: 10px;
-    }
-}
