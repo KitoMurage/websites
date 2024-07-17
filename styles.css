@@ -323,3 +323,19 @@ input[type="date"].contact-inputs {
     }
     
 }
+@media screen and (max-width: 480px) {
+    #header {
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .top-right-button {
+        top: 10px;
+        right: 10px; 
+        font-size: 10px;
+        padding: 8px 16px; 
+    }
+}
+
